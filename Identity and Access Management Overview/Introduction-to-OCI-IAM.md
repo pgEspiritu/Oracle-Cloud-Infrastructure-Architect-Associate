@@ -1,6 +1,6 @@
 # 🔐 OCI Identity and Access Management (IAM)
 
-Welcome to this lesson on **OCI Identity and Access Management (IAM)**. In this session, we’ll cover the **core concepts** of OCI IAM, such as:
+**Core Concepts Covered:**
 
 - Authentication and Authorization
 - Identity domains
