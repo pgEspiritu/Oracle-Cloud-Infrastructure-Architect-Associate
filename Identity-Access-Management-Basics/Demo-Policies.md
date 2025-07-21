@@ -56,7 +56,7 @@ Switched back to **admin account**:
 📜 **Generated Policy Statement:**
 
 ```text
-Allow group NetworkAdmin of domain production to manage virtual-network-family in compartment production
+Allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in compartment Production
 ```
 
 ✏️ You can edit this manually in the Manual Editor to add more statements if needed.
@@ -96,5 +96,5 @@ Access was verified by logging in as a user and confirming access to VCN resourc
 
 ## 📝 Policy Recap
 ```text
-Allow group NetworkAdmin of domain production to manage virtual-network-family in compartment production
+Allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in compartment Production
 ```
