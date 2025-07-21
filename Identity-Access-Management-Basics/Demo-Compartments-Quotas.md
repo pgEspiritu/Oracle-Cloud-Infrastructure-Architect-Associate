@@ -38,8 +38,8 @@ To restrict or allow specific resource usage in compartments, you can set **quot
 4. Add a **Description**.
 5. Add **Policy Statements**:
     ```text
-    zero virtual-network-family quotas in compartment security-sandbox
-    set virtual-cloud-networks quota 1 in compartment security-sandbox
+    zero vcn quotas in compartment security-sandbox
+    set vcn quota vcn-count to 1 in compartment security-sandbox
     ```
 6. Click **Create Quota Policy**.
 
