@@ -72,10 +72,10 @@ set compute-core quota standard2-core-count to 10 in tenancy
 
 ```bash
 # Deny Exadata for all
-zero exadata quota * in tenancy
+zero database quota  /*exadata*/ in tenancy
 
 # Allow Exadata only in production
-unset exadata quota * in compartment production
+unset database quota /*exadata*/ in compartment Production
 ```
 
 ---
