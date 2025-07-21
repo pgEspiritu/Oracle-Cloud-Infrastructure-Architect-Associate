@@ -47,15 +47,15 @@ set vcn quota vcn-count to 4 in compartment production
 
 ## 🧾 More Examples
 
-### 🚫 Limit Exadata to 1
+### 🚫 Allocate only one Exadata resources in the entire tenancy
 ```text
-set exadata quota exadata-count 1 in tenancy
+set database quota /*exadata*/ to 1 in tenancy
 ```
 
 ## 📉 Limit Compute Cores for Specific VM Shapes
 
 ```bash
-set compute quota vm-standard2-core-count 10 in tenancy
+set compute-core quota standard2-core-count to 10 in tenancy
 ```
 
 ## 🔁 Quota Action Keywords
