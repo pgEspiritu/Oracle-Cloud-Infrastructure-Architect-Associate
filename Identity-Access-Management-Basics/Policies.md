@@ -37,8 +37,8 @@ Subjects are typically defined as:
 ### 📌 Examples:
 
 ```hcl
-Allow group production/NetworkAdmin to manage virtual-network-family in compartment sandbox
-Allow dynamic-group production/ComputeGroup to use object-family in tenancy
+Allow group 'production'/'NetworkAdmin' to manage virtual-network-family in compartment sandbox
+Allow dynamic-group 'production'/'ComputeGroup' to use object-family in tenancy
 ```
 
 ## 💡 Tip
@@ -50,7 +50,7 @@ If you omit the domain name, the **default domain** is implied.
 ## 👥 Chaining Multiple Groups in One Policy
 
 ```hcl
-Allow group production/A-Admin, production/B-Admin to read all-resources in compartment dev
+Allow group 'production'/'A-Admin', 'production'/'B-Admin' to read all-resources in compartment dev
 ```
 
 ---
@@ -92,7 +92,7 @@ Allow group production/A-Admin, production/B-Admin to read all-resources in comp
 ## 🎯 Example Policy
 
 ```hcl
-Allow group production/NetworkAdmin to manage virtual-network-family in compartment sandbox
+Allow group 'production'/'NetworkAdmin' to manage virtual-network-family in compartment sandbox
 ```
 
 ---
@@ -108,8 +108,8 @@ You can define the scope of access using:
 ### 📌 Example
 
 ```hcl
-Allow group production/NetworkAdmin to manage virtual-network-family in compartment sandbox
-Allow group default/SecurityAdmin to read audit-events in compartment id ocid1.compartment...
+Allow group 'production'/'NetworkAdmin' to manage virtual-network-family in compartment sandbox
+Allow group 'default'/'SecurityAdmin' to read audit-events in compartment id ocid1.compartment...
 ```
 
 ---
