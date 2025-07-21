@@ -18,7 +18,7 @@ OCI allows administrators to **limit resource consumption** using **quota polici
 
 ### 🛠️ Quota Policy Syntax
 ```text
-set <service-family> quota <quota-name> <value> in compartment <compartment-name>
+set <service-family> quota <quota-name> to <value> in compartment <compartment-name>
 ```
 
 ---
@@ -30,7 +30,7 @@ Allow only **4 Virtual Cloud Networks (VCNs)** in the `production` compartment.
 
 ## 🔤 Policy  
 ```text
-set virtual-network quota VCN-count 4 in compartment production
+set vcn quota vcn-count to 4 in compartment production
 ```
 
 ## 🔍 Breakdown
@@ -41,7 +41,7 @@ set virtual-network quota VCN-count 4 in compartment production
 - `4` → max allowed  
 - `production` → target compartment  
 
-👉 Refer to [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/GSG/Reference/servicelimits.htm) for valid service families and quota names.
+👉 Refer to [OCI documentation](https://docs.oracle.com/en-us/iaas/Content/Quotas/Concepts/quota_policy_syntax.htm) for valid service families and quota names.
 
 ---
 
