@@ -55,32 +55,42 @@ Tag the group, dynamic group, or requesting compartment.
 ### 📌 Example 1: Group-Based Access
 ```text
 Allow any-user to manage instance-family in compartment HR 
-where request.principal.group.tag.operations.project = 'Prod'
+where request.principal.group.tag.Operations.Project = 'Prod'
 ```
-✅ Any group tagged with` operations.project = Prod` gets access.
+✅ Any group tagged with `Operations.Project = Prod` can manage instances in HR compartment.
 
 ### 📌 Example 2: Dynamic Group Access
 ```text
-Allow dynamic-group DevInstances to manage object-family in tenancy 
-where request.principal.compartment.tag.operations.phase = 'Prod'
+Allow dynamic-group DomainA/InstancesA to manage object-family in compartment HR 
+where request.principal.group.tag.Operations.Project = 'Prod'
 ```
+✅ Instances in dynamic group InstancesA that have been tagged  `Operations.Project = Prod` can manage objects in HR compartment.
+
+### 📌 Example 3: Compartment Access
+```text
+Allow dynamic-group DomainA/InstancesA to manage object-family in tenancy
+where request.principal.compartment.tag.Operations.Project = 'Prod'
+```
+✅ Instances in dynamic group InstancesA that also reside in a compartment that have been tagged  `Operations.Project = Prod` can manage objects in the tenancy.
 
 ---
 
 ## 🔹 Tagging the Target Resource
 Apply tags to the target resource or its compartment.
 
-### 📌 Example 3: Target Resource Tagged
+### 📌 Example 4: Target Resource Tagged
 ```text
 Allow group DomainA/GroupA to manage all-resources in compartment HR 
-where target.resource.tag.operations.project = 'Prod'
+where target.resource.tag.Operations.Project = 'Prod'
 ```
+✅ Policy allows GroupA to manage any resources that have been tagged with `Operations.Project = Prod`
 
-### 📌 Example 4: Target Compartment Tagged
+### 📌 Example 5: Target Compartment Tagged
 ```text
 Allow group DomainA/GroupA to manage all-resources in tenancy 
-where target.resource.compartment.tag.operations.project = 'Prod'
+where target.resource.compartment.tag.Operations.Project = 'Prod'
 ```
+✅ Policy allows the members of GroupA to manage all resources in the tenancy that are in compartments that are tagged with the `Operations.Project = Prod`.
 
 ---
 
@@ -90,13 +100,13 @@ where target.resource.compartment.tag.operations.project = 'Prod'
 You have:
 - Compartments: ProjectA, ProjectB, ProjectC
 - Admin groups: A-Admin, B-Admin, C-Admin
-- All tagged with: `employeeGroup.role = Admin`
+- All tagged with: `EmployeeGroup.Role = Admin`
 
 🟡 Problem: Give all admins access to a new Test compartment without creating a new group.
 🟢 Solution:
 ```text
 Allow any-user to manage all-resources in compartment Test 
-where request.principal.group.tag.employeeGroup.role = 'Admin'
+where request.principal.group.tag.EmployeeGroup.Role = 'Admin'
 ```
 ✅ Any group with this tag automatically gets access.
 ❌ No need to modify policy when adding/removing admins.
@@ -104,12 +114,12 @@ where request.principal.group.tag.employeeGroup.role = 'Admin'
 ### 🧪 Example 2: Test Engineers Access to Test Compartments
 Structure:
 - ProjectA, ProjectB, ProjectC each contain: `test`, `prod` compartments
-- `test` compartments tagged with: `ResourceGroup.role = Test`
+- `test` compartments tagged with: `ResourceGroup.Role = Test`
   
 🟢 Policy:
 ```text
 Allow group DomainA/Testers to use all-resources in tenancy 
-where target.resource.compartment.tag.ResourceGroup.role = 'Test'
+where target.resource.compartment.tag.ResourceGroup.Role = 'Test'
 ```
 ✅ Testers get access across all tagged test compartments.
 🔄 Revoke access by changing/removing tag — no policy update needed.
