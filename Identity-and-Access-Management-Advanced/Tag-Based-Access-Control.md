@@ -21,9 +21,11 @@ OCI tags are metadata in **key-value pairs** applied to resources.
 
 Examples:
 ```text
-project=Finance  
-cost_center=CC001  
-phase=Production
+Operations.Environment="Production" 
+Operations.Project="Alpha"  
+HumanResources.Environment="Production"
+HumanResources.CostCenter="42"
+HumanResources.Project="Beta"
 ```
 You can use these tags in policy statements to control access.
 
