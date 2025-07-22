@@ -46,15 +46,18 @@ Let’s rewrite policies using advanced techniques.
 
 ### ❌ Policy A (Too Broad)
 ```text
-Allow group audit-group to manage objects in compartment Acme
+Allow group DomainA/AuditDG to manage objects in compartment AcmeCorp
 ```
 - Uses `manage` → grants all permissions
 - ❗ Violates least privilege
 
 ### ✅ Rewrite: Restrict to Specific Bucket & Permission
 ```text
-Allow group audit-group to manage object-family in compartment Acme 
-where target.bucket.name='myBucket' and request.permission='OBJECT_CREATE'
+Allow group omainA/AuditDG to manage objects in compartment AcmeCorp 
+where
+all { target.bucket.name='audit_logs_bucket',
+    request.permission='OBJECT_CREATE'
+    }
 ```
 - Restricts to:
   - Specific bucket
