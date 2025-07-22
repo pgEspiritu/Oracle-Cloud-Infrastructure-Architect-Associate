@@ -69,20 +69,30 @@ all { target.bucket.name='audit_logs_bucket',
 Objective: Allow Group XYZ to list, create, update, write, and move block volumes — but not delete.
 Method 1: Explicitly Define Allowed Permissions
 ```text
-Allow group XYZ to manage volume-family in compartment Acme 
-where all {request.permission='VOLUME_CREATE', request.permission='VOLUME_UPDATE', request.permission='VOLUME_MOVE'}
+Allow group DomainA/XYZ to manage groups in tenancy where
+any {
+request.permission='VOLUME_INSPECT',
+request.permission='VOLUME_CREATE',
+request.permission='VOLUME_WRITE',
+request.permission='VOLUME_UPDATE',
+request.permission='VOLUME_MOVE'}
 ```
 
 Method 2: Exclude a Permission
 ```text
-Allow group XYZ to manage volume-family in compartment Acme 
-where request.permission != 'VOLUME_DELETE'
+Allow group DomainA/XYZ to manage groups in tenancy where
+request.permission != 'VOLUME_DELETE'
 ```
 
 Method 3: Use API Operation
 ```text
-Allow group XYZ to manage volume-family in compartment Acme 
-where request.operation in ('CreateVolume', 'UpdateVolume', 'MoveVolume')
+Allow group DomainA/XYZ to manage groups in tenancy where
+any {
+request.operation='ListVolumes',
+request.operation='GetVolume',
+request.operation='AttachVolume',
+request.operation='CreateVolume',
+request.operation='ChangeVolumeCompartment'}
 ```
 
 ---
@@ -90,13 +100,17 @@ where request.operation in ('CreateVolume', 'UpdateVolume', 'MoveVolume')
 ### 🗂 Example: Upload/Inspect in Buckets Only
 Objective: Group should only upload or inspect objects in any bucket.
 ```text
-Allow group auditors to manage object-family in compartment Acme 
+Allow group DomainA/ObjectWriters to manage objects in compartment ABC
 where any {request.permission='OBJECT_CREATE', request.permission='OBJECT_INSPECT'}
 ```
 
 Further restrict to a specific bucket:
 ```text
-... where target.bucket.name = 'my-audit-bucket'
+Allow group DomainA/ObjectWriters to manage objects in compartment ABC where
+all {target.bucket.name ='BucketA',
+    any {request.permission='OBJECT_CREATE',
+        request.permission='OBJECT_INSPECT'
+        }}
 ```
 
 ---
@@ -104,8 +118,10 @@ Further restrict to a specific bucket:
 ### 🕒 Time-Based Policy Example
 Objective: Allow contractors to use instances only at specific times.
 ```text
-Allow group contractor to use instance-family in compartment Acme 
-where request.time < '2025-12-31T23:59:59Z'
+Allow DomainA/Contractors to use instances in compartment contractors where
+all { request.utctimestamp after '<TIME>',
+    request.utc-timestamp before '<TIME>'
+    }
 ```
 
 ---
