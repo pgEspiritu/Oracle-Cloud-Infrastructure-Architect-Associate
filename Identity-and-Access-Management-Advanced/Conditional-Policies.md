@@ -108,8 +108,8 @@ target.bucket.name = 'HR*'
 #💡 Real-World Examples
 ## 🌎 Region-Based Access
 ```text
-Allow group PhoenixAdmins to manage all-resources in tenancy
-where request.region = 'phx'
+Allow group DomainA/PHX-Admins to manage all-resources in tenancy
+where request.region = 'PHX'
 ```
 > ➡️ Members can only operate in the Phoenix region.
 
