@@ -75,12 +75,12 @@ Go to:
 
 #### Original Policy:
 ```text
-Allow group SecOps to manage instance-family in compartment Sandbox
+Allow group 'Default'/'SecOps' to manage instance-family in compartment Sandbox
 ```
 
 Modified Policy with Tag Condition:
 ```text
-Allow group SecOps to manage instance-family in compartment Sandbox
+Allow group 'Default'/'SecOps' to manage instance-family in compartment Sandbox
 where target.resource.tag.operations.instance_type = 'non-critical'
 ```
 📌 This allows management only for instances tagged as non-critical
