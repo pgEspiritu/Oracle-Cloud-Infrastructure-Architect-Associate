@@ -16,7 +16,7 @@ Allow members of the **NetworkAdmin** group to manage **Virtual Cloud Networks (
 - **Name**: `Demo-Condition`
 - **Manual Policy Statement**:
   ```hcl
-  allow group NetworkAdmin to manage virtual-network-family in tenancy 
+  allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in tenancy 
   where target.compartment.id != 'ocid1.compartment.oc1..<Production_Compartment_OCID>'
   ```
 - Copy the OCID of the Production compartment and replace in the policy above.
