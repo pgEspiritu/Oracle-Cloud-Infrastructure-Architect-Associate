@@ -37,8 +37,8 @@ Navigate to:
 
 ### Policy Statements:
 ```text
-Allow group production/network admin to manage virtual-network-family in compartment C
-Allow group production/network admin to manage policies in compartment C
+Allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in compartment C
+Allow group 'Production'/'NetworkAdmin' to manage policies in compartment C
 ```
 
 ✅ Click **Create**.
