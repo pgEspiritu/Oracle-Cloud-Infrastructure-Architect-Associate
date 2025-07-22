@@ -78,15 +78,15 @@ Back as **Tenancy Admin**:
 Try reusing same policy text in **Compartment A**:
 
 ```text
-Allow group production/network admin to manage virtual-network-family in compartment C
+Allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in compartment C
 ```
 
 ❌ Error: Compartment C not in visible subtree
 
 ###Fix:
 ```text
-Allow group production/network admin to manage virtual-network-family in compartment B:C
-Allow group production/network admin to manage policies in compartment B:C
+Allow group 'Production'/'NetworkAdmin' to manage virtual-network-family in compartment B:C
+Allow group 'Production'/'NetworkAdmin' to manage policies in compartment B:C
 ```
 
 ✅ Click Create Policy
