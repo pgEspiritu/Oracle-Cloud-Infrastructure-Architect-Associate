@@ -117,7 +117,7 @@ where request.region = 'PHX'
 
 ## 📂 Compartment Restriction
 ```text
-Allow group NetworkAdmins to manage virtual-network-family in tenancy
+Allow group DomainA/NetworkAdmins to manage virtual-network-family in tenancy
 where target.compartment.id != 'ocid1.compartment.oc1..excludedCompartmentID'
 ```
 
