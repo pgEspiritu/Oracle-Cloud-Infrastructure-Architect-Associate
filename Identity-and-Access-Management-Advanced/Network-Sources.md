@@ -1,9 +1,5 @@
 # 🌐 Lesson: Network Sources in OCI
 
-Welcome to this lesson on **Network Sources**. In this lesson, we will explore how to use network sources for managing access in **OCI (Oracle Cloud Infrastructure)**.
-
----
-
 ## 🔐 What are Network Sources?
 
 **Network sources** are a mechanism to control access based on **originating IP addresses**.
