@@ -58,20 +58,20 @@ Membership is defined using **matching rules** — not static additions. This me
   ALL {instance.compartment.id = 'ocid1.compartment.oc1..xyz'}
   ```
 
-- **By Specific Instance**:
+- **By Specific Instance**: `(All {Instance.compartment.id = '<compartment-ocid>'})`:
   ```plaintext
   ALL {instance.id = 'ocid1.instance.oc1..abc'}
   ```
 
-- **By Resource Type**:
+- **By Resource Type**: `(Any {resource.type = '<resource type>', Instance.compartment.id = '<compartment-ocid>'})`:
   ```plaintext
   ALL {resource.type = 'dbaas' AND resource.compartment.id = 'ocid1.compartment.oc1..xyz'}
   ```
 
-- **For Functions or Certificates**:
-  ```plaintext
-  ALL {resource.type = 'fnfunc' AND resource.compartment.id = 'ocid1.compartment.oc1..xyz'}
-  ```
+  - **For Functions or Certificates**:
+    ```plaintext
+    ALL {resource.type = 'fnfunc' AND resource.compartment.id = 'ocid1.compartment.oc1..xyz'}
+    ```
 
 ---
 
@@ -80,7 +80,7 @@ Membership is defined using **matching rules** — not static additions. This me
 ### ✅ Example 1: Object Storage Access
 ```plaintext
 Allow dynamic-group <domain>/<dynamic-group-name> to manage buckets in tenancy
-Where target.bucket.name='example-bucket' and request.region='us-ashburn-1'
+where all {target.bucket.name='example-bucket', target.region.name='us-ashburn-1'
 ```
 
 ### ✅ Example 2: Database Backups
