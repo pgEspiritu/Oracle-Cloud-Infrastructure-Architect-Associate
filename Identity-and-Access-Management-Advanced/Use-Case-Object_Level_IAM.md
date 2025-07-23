@@ -76,22 +76,29 @@ This provides:
 
 ### Example 1: Full Access to Prod Folder
 ```plaintext
-Allow group <GroupName> to read, write, and delete objects where target.bucket.name='test-bucket' and target.object.name='/prod/*'
+Allow group <GroupName> to manage objects in Tenancy where
+  all {target.bucket.name='test-bucket', target.object.name='/prod/*'}
 ```
 
 ### Example 2: Read-Only Access
 ```plaintext
-Allow group <GroupName> to inspect and read objects where target.bucket.name='test-bucket' and target.object.name='/prod/*'
+Allow group <GroupName> to manage objects in Tenancy where
+  all {target.bucket.name='test-bucket', target.object.name='/prod/*',
+    any {request.permission="OBJECT_INSPECT', request.permission'OBJECT_READ'}}
 ```
 
 ### Example 3: Write-Once Access in Development Folder
 ```plaintext
-Allow group <GroupName> to create and read objects where target.bucket.name='test-bucket' and target.object.name='/development/*'
+Allow group <GroupName> to manage objects in Tenancy where
+  all {target.bucket.name='test-bucket', target.object.name='/prod/*',
+    any {request.permission='OBJECT_CREATE'}}
 ```
 
 ### Example 4: Full Access to PDF Files for a Specific User
 ```plaintext
-Allow user <UserOCID> to manage objects where target.bucket.name='test-bucket' and target.object.name='*.pdf'
+Allow group <GroupName> to manage objects in Tenancy where
+  all {target.bucket.name='test-bucket', target.object.name='/dev/*',
+    any {request.permission='OBJECT_CREATE', request_permission='OBJECT_READ'}}
 ```
 
 ---
