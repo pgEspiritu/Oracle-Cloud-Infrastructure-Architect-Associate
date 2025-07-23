@@ -93,11 +93,13 @@ This condition will now:
 
 ---
 
-## ✅ Retest Bucket Creation
+## ✅ Test Bucket Creation
 
-1. Go back to the **storage-admin** user session  
-2. Refresh the page  
-3. Try creating the bucket again
+1. Go back to the **storage-admin** user session
+2. Create a Bucket (Accept Default Values)
+   > Error: Not Authorized to create a Bucket (Due to unauthorized IP Address stated in the Policy)
+3. Try to add a Network Source with your IP Address.
+5. Try creating the bucket again
 
 - ✅ **Bucket creation successful** — request is now from a valid IP
 
