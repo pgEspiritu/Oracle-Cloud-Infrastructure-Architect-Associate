@@ -93,7 +93,9 @@ Allow group X, Y to manage instances in compartment A
 Or better, be explicit:
 
 ```text
-Allow group X, Y to { create, update, delete, inspect instances } in compartment A
+Allow group X, Y to { SUBNET_READ, SUBNET_ATTACH, SUBNET_DETACH,
+                  INSTANCE_INSPECT, INSTANCE_READ, INSTANCE_UPDATE, INSTANCE_CREATE_IMAGEZ
+                  INSTANCE_POWER_ACTIONS, INSTANCE_ATTACH_VOLUME, INSTANCE_DETACH_VOLUME } in compartment A
 ```
 
 ---
