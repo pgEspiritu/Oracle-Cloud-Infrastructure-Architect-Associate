@@ -59,7 +59,7 @@ We notice group X has multiple permissions across separate policy statements.
 🔧 Optimization: Merge all permissions into a single policy statement:
 
 ```text
-Allow group X to { use subnets, manage instances, read catalog-listings } in compartment A
+Allow group X to { use subnets, manage instances, read app-catalog-listing } in compartment A
 ```
 
 ✅ Benefits:
