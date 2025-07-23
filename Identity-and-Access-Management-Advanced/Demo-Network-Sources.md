@@ -50,7 +50,7 @@ We'll achieve this using **network sources** in a **simple 2-step process**:
 2. Select the policy allowing storage-admin to manage object storage
 3. Edit the policy statement:
    ```text
-   Allow group storage-admin to manage object-family in compartment production 
+   Allow group 'Default'/'StorageAdmin' to manage object-family in compartment Production 
    where request.networkSource.name='officenet'
    ```
 4. Click Save
