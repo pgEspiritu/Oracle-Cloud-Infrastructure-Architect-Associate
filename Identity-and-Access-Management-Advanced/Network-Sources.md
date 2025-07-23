@@ -28,7 +28,11 @@ It’s a **two-step process**:
 
 ### ✅ Step 2: Write a Policy with Network Source Condition
 
-- Write a policy to allow a **group of users** to perform actions on resources
+- Write a policy to allow a **group of users** to perform actions on resources.
+  Example:
+  ```text
+  allow group <domain>/<group> to manage <resource> in tenancy
+  ```
 - Add a **network source condition** to scope access further
 
 ### 🧩 How?
