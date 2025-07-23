@@ -77,7 +77,7 @@ Go to Identity & Security > Policies:
 
 Add the following policy statement:
 ```text
-Allow dynamic-group DG-Demo to manage object-family in compartment production
+Allow dynamic-group 'Production'/'DG-Demo' to manage object-family in compartment Production
 ```
 > ✅ This allows all compute instances in the dynamic group to manage Object Storage resources.
 
