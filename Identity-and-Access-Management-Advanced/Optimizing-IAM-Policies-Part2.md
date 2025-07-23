@@ -59,8 +59,11 @@ We notice group X has multiple permissions across separate policy statements.
 🔧 Optimization: Merge all permissions into a single policy statement:
 
 ```text
-Allow group X to { use subnets, manage instances, read app-catalog-listing } in compartment A
+Allow group X to { SUBNET_READ, SUBNET_ATTACH, SUBNET_DETACH,
+                  INSTANCE_INSPECT, INSTANCE_READ, INSTANCE_UPDATE, INSTANCE_CREATE_IMAGEZ
+                  INSTANCE_POWER_ACTIONS, INSTANCE_ATTACH_VOLUME, INSTANCE_DETACH_VOLUME } in compartment A
 ```
+>  Policy statements is used insted of Verb to minimizes policy statements.
 
 ✅ Benefits:
 - Simplifies management
