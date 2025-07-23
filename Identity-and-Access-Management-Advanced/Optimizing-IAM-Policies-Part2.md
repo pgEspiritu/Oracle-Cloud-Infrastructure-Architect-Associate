@@ -63,7 +63,7 @@ Allow group X to { SUBNET_READ, SUBNET_ATTACH, SUBNET_DETACH,
                   INSTANCE_INSPECT, INSTANCE_READ, INSTANCE_UPDATE, INSTANCE_CREATE_IMAGEZ
                   INSTANCE_POWER_ACTIONS, INSTANCE_ATTACH_VOLUME, INSTANCE_DETACH_VOLUME } in compartment A
 ```
->  Policy statements is used insted of Verb to minimizes policy statements.
+> Policy statements are used instead of Verbs to minimize policy statements and add only the needed permissions.
 
 ✅ Benefits:
 - Simplifies management
@@ -97,7 +97,7 @@ Allow group X, Y to { SUBNET_READ, SUBNET_ATTACH, SUBNET_DETACH,
                   INSTANCE_INSPECT, INSTANCE_READ, INSTANCE_UPDATE, INSTANCE_CREATE_IMAGEZ
                   INSTANCE_POWER_ACTIONS, INSTANCE_ATTACH_VOLUME, INSTANCE_DETACH_VOLUME } in compartment A
 ```
-
+> Policy statements are used instead of Verbs to minimize policy statements and add only the needed permissions.
 ---
 
 ## 🧠 Use Naming Patterns
