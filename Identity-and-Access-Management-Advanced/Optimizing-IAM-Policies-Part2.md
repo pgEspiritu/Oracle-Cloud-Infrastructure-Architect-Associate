@@ -47,7 +47,7 @@ This provides:
 To access the application catalog:
 
 ```text
-Allow group X to read catalog listings in compartment A
+Allow group X to read app-catalog-listing in compartment A
 ```
 
 This allows group X to view available resource listings in the compartment.
