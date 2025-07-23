@@ -53,7 +53,7 @@ Membership is defined using **matching rules** — not static additions. This me
 
 ## 🧪 Matching Rule Examples
 
-- **By Compartment**:
+- **By Compartment** (All | Any {Instance.compartment.id = '<compartment-ocid>'}):
   ```plaintext
   ALL {instance.compartment.id = 'ocid1.compartment.oc1..xyz'}
   ```
