@@ -87,18 +87,24 @@ Allow group <GroupName> to manage objects in Tenancy where
     any {request.permission="OBJECT_INSPECT', request.permission'OBJECT_READ'}}
 ```
 
-### Example 3: Write-Once Access in Development Folder
+### Example 3: Write-Once Access in Production Folder
 ```plaintext
 Allow group <GroupName> to manage objects in Tenancy where
   all {target.bucket.name='test-bucket', target.object.name='/prod/*',
     any {request.permission='OBJECT_CREATE'}}
 ```
 
-### Example 4: Full Access to PDF Files for a Specific User
+### Example 4: Read and Write Access in Development Folder
 ```plaintext
 Allow group <GroupName> to manage objects in Tenancy where
   all {target.bucket.name='test-bucket', target.object.name='/dev/*',
     any {request.permission='OBJECT_CREATE', request_permission='OBJECT_READ'}}
+```
+
+### Example 5: Full Access to PDF Files for a Specific User
+```plaintext
+Allow any-user to manage objects in Tenancy where
+  all {target.bucket.name='test-bucket', target.object.name='*.pdf', request.user.id = <user OCID>}
 ```
 
 ---
