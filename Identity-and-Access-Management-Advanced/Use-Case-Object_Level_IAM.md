@@ -41,9 +41,9 @@ Example: Allow only object **creation and inspection** for `BucketA`.
 
 Consider a shared bucket with:
 
-- Active project data
-- Archived data
-- Another active dataset
+- Dataset 1: Active project data
+- Dataset 2: Archived data
+- Dataset 3: Another active dataset
 
 Different users or groups may require different access levels:
 
