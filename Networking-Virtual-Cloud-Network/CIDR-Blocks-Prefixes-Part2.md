@@ -26,17 +26,17 @@ Subnetting is the process of dividing a **larger network** into **smaller, more 
 - `/16`: First 16 bits are for **network**, last 16 bits for **hosts**
 
 Example:
-`CIDR Block: 192.168.1.0/24
-Network Address: First 24 bits → 192.168.1
-Host Range: 192.168.1.0 to 192.168.1.255`
+`CIDR Block: 192.168.1.0/24`
+`Network Address: First 24 bits → 192.168.1`
+`Host Range: 192.168.1.0 to 192.168.1.255`
 
 
 ## 🔍 CIDR Example in Detail
 
 Given:
-`IP Address: 192.168.1.2
-Subnet Mask: /24 = 255.255.255.0
-`
+`IP Address: 192.168.1.2`
+`Subnet Mask: /24 = 255.255.255.0`
+
 
 
 ### 💡 Binary Representation
