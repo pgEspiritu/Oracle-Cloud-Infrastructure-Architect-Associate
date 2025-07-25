@@ -1,4 +1,4 @@
-# 🧩 Lesson: Subnets in OCI
+# 🧩 Lesson: Subnets in OCI Part 1
 
 ## 📊 Subnet Basics
 
