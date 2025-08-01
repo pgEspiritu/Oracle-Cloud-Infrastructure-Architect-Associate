@@ -1,81 +1,107 @@
-# Lesson: Route Tables in OCI
+# 📘 OCI Route Tables – Deep Dive
 
-## 🔄 What Is a Route Table?
+## 🧠 Route Table Basics
 
-A **Route Table** determines:
+- A **Route Table** defines the **path for outbound traffic** from a VCN.
+- Local traffic (i.e., between subnets in the same VCN) is handled via the **implicit local route**.
+- Each **subnet must be associated with exactly one route table**.
+- A single **route table can be associated with multiple subnets**.
 
-- How traffic flows **within** a VCN.
-- How traffic originating from the VCN **reaches other destinations**.
-
-In essence, it **defines the path** for outbound and inter-subnet traffic.
-
----
-
-## 🧾 Types of Route Tables
-
-There are **two types** of Route Tables:
-
-### 1. Default Route Table
-- **Automatically created** when a VCN is created.
-- Includes an **implicit local route**, allowing **communication between subnets**.
-- This **local route is not visible** in the console UI.
-- Example:
-```text
-Subnet A <--> Subnet B <--> Subnet C
-(All can talk to each other through implicit local route)
-```
-
-
-### 2. Custom Route Table
-- **Manually created** by users.
-- Also includes the **implicit local route**.
-- Typically used to define **specific routing for public and private subnets**.
-- Each subnet can be associated with **only one route table**.
+### ❗ Important Rule:
+> **One subnet ➡️ One route table**  
+> **One route table ➡️ Many subnets** ✅  
+> **One subnet ➡️ Many route tables** ❌
 
 ---
 
-## 📋 Route Table Format
+## 🔁 Implicit Local Routing
 
-Each route rule in a route table has **two columns**:
+- Every route table (default or custom) contains an **implicit local route**.
+- This allows **communication between subnets within the same VCN**.
+- This **local route is not visible** in the console (you'll see “0 rules” even though it's functioning).
 
-| Destination CIDR Block | Target (Next Hop)          |
-|------------------------|----------------------------|
-| e.g. `0.0.0.0/0`       | e.g. Internet Gateway (IGW) |
+---
+
+## 📐 Specificity in Routing Rules
+
+> **Most specific route wins** in case of overlapping route rules.
 
 ### Example:
-Suppose you have an instance in **Subnet A** that needs to access the **internet**.
 
-- **Destination CIDR Block**: `0.0.0.0/0` (represents "anywhere on the internet")
-- **Target**: Internet Gateway (IGW)
+| Destination CIDR | Target            |
+|------------------|-------------------|
+| `0.0.0.0/0`      | Internet Gateway  |
+| `123.45.67.0/24` | Service Gateway   |
 
-This allows internet-bound traffic to flow through the IGW.
+- If traffic is destined to `123.45.67.10` (part of both ranges), it will go to the **Service Gateway**, because `/24` is more specific than `/0`.
+
+### Key Concept:
+- **Smaller CIDR range** = **More specific**
+- If **no matching route** is found → traffic is **dropped**
 
 ---
 
-## 🏁 Supported Route Targets
+## 🧱 Route Table Structure
 
-A route rule’s **target** (i.e., next hop) can be:
+Each route rule contains:
 
-- **Internet Gateway (IGW)**
-- **NAT Gateway**
-- **Service Gateway**
-- **Dynamic Routing Gateway (DRG)**
-- **Local Peering Gateway (LPG)**
-- **Private IP (e.g., of a virtual appliance)**
+| Field                | Description                   |
+|----------------------|-------------------------------|
+| **Destination CIDR** | IP range for the destination  |
+| **Target**           | Next hop (gateway, IP, etc.)  |
 
-Each has a use case depending on whether you're routing to:
+### Example for Public Subnet:
+| Destination CIDR     | Target            |
+|----------------------|-------------------|
+| `0.0.0.0/0`          | Internet Gateway  |
 
-- The public internet
-- Oracle services
-- Peered VCNs
-- On-prem networks
-- Virtual firewalls, etc.
+### Example for Private Subnet:
+| Destination CIDR     | Target            |
+|----------------------|-------------------|
+| `0.0.0.0/0`          | NAT Gateway       |
+| `object_storage_cidr`| Service Gateway   |
+
+---
+
+## 🧭 Supported Route Targets
+
+| Target Type              | Use Case                                                                 |
+|--------------------------|--------------------------------------------------------------------------|
+| **Internet Gateway**     | Public subnet internet access                                            |
+| **NAT Gateway**          | Outbound internet access for private subnet (unidirectional)             |
+| **Service Gateway**      | Private access to Oracle services (e.g., Object Storage)                 |
+| **Local Peering Gateway**| Access between VCNs in same region                                       |
+| **Dynamic Routing Gateway** | Access to/from on-premise via FastConnect or VPN                       |
+| **Private IP**           | Route directly to a specific private IP (e.g., for virtual appliances)   |
+
+---
+
+## 📊 Visual: Routing Example
+
+### Setup:
+
+- **VCN**
+  - **Public Subnet**
+    - Uses **Internet Gateway**
+  - **Private Subnet**
+    - Uses **NAT Gateway** for internet-bound patch downloads
+    - Uses **Service Gateway** for Oracle service access (e.g., Object Storage)
+
+### Private Subnet Route Table:
+
+| Destination CIDR     | Target            |
+|----------------------|-------------------|
+| `0.0.0.0/0`          | NAT Gateway       |
+| `object_storage_cidr`| Service Gateway   |
+
+> In case of overlap, **Service Gateway** is chosen due to specificity.
 
 ---
 
 ## ✅ Summary
 
-- A **Route Table** controls traffic flow **out of a subnet**.
-- Each subnet must be associated with **one route table**.
-- **Default route table** includes a **local route** for inter-subnet communication.
-- **Custom route tables** allow finer control over traffic paths for public/private subnet configurations.
+- Route tables determine how **outbound traffic** flows.
+- Each **subnet** can have only **one associated route table**.
+- **Implicit local routes** allow intra-VCN subnet communication.
+- **Most specific CIDR match** wins in case of overlapping rules.
+- Various **targets** enable internet access, Oracle service access, peering, and on-prem connectivity.
