@@ -1,3 +1,57 @@
+# Lesson: Service Gateway
+
+## Introduction
+
+Hello, and welcome to this lesson. In this lesson, we are going to talk about **Service Gateway**.
+
+---
+
+## What is a Service Gateway?
+
+To understand the Service Gateway, let’s first discuss a construct known as the **Oracle Services Network (OSN)**.
+
+### Oracle Services Network (OSN)
+- The OSN is reserved for **Oracle services**.
+- These services typically have **public IP addresses**.
+- When you access Oracle services, communication usually happens **over the internet**.
+
+---
+
+## The Role of the Service Gateway
+
+With a **Service Gateway**, **cloud resources without public IP addresses** (i.e., with only private IPs) can **still access Oracle services**—**privately**.
+
+### Key Benefits:
+- Enables **private access** to Oracle services.
+- Traffic **does not traverse the internet**.
+- Communication happens over **Oracle's network fabric**.
+
+This is important for **data security**, as private communication ensures that traffic isn’t exposed over the internet.
+
+---
+
+## Services CIDR Level
+
+### What is Services CIDR Level?
+- A **string** that represents **all regional public IP address ranges** of Oracle services.
+- Two options to route traffic to Oracle services:
+  1. **Manual entry** of public IP address ranges (not recommended).
+  2. **Use of services CIDR string** (recommended).
+
+### Why Use Services CIDR Level?
+- Public IP ranges of Oracle services can **change**.
+- Manual updates to:
+  - **Route tables**
+  - **Security rules**
+  - Can be error-prone and require maintenance.
+
+Using the **services CIDR level string** simplifies the configuration and removes the need to manually update values.
+
+### Example:
+For **Object Storage in OCI Phoenix**, the services CIDR string might look like:
+```text
+oci-phx-objectstorage
+```
 
 ---
 
