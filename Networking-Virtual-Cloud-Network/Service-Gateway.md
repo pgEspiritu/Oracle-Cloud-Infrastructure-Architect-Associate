@@ -1,11 +1,5 @@
 # Lesson: Service Gateway
 
-## Introduction
-
-Hello, and welcome to this lesson. In this lesson, we are going to talk about **Service Gateway**.
-
----
-
 ## What is a Service Gateway?
 
 To understand the Service Gateway, let’s first discuss a construct known as the **Oracle Services Network (OSN)**.
