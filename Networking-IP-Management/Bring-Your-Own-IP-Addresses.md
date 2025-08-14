@@ -72,7 +72,7 @@ With **Bring Your Own IP (BYOIP)**, you can migrate your **own IPv4 CIDR block**
 flowchart LR
     A[1. Request Import] --> B[2. Receive Token]
     B --> C[3. Add Token to RIR]
-    C --> D[4. Create ROA with RIR (using Oracle BGP ASN)]
+    C --> D[4. Create ROA with RIR \(using Oracle BGP ASN\)]
     D --> E[5. Oracle Validates Ownership]
     E --> F[6. Provision to Compartment]
 ```
