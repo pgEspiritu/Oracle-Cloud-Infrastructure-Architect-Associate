@@ -70,11 +70,11 @@ With **Bring Your Own IP (BYOIP)**, you can migrate your **own IPv4 CIDR block**
 
 ```mermaid
 flowchart LR
-    A[1. Request Import] --> B[2. Receive Token]
-    B --> C[3. Add Token to RIR]
-    C --> D[4. Create ROA with RIR - using Oracle BGP ASN]
-    D --> E[5. Oracle Validates Ownership]
-    E --> F[6. Provision to Compartment]
+    A[Request Import] --> B[Receive Token]
+    B --> C[Add Token to RIR]
+    C --> D[Create ROA with RIR using Oracle BGP ASN]
+    D --> E[Oracle Validates Ownership]
+    E --> F[Provision to Compartment]
 ```
 
 ✅ Once provisioned, you can **assign** these IPs to your OCI resources just like Oracle-assigned addresses.
