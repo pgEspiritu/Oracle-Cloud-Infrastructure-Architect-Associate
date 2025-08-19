@@ -17,7 +17,7 @@ This course is structured into key modules:
 
 ## 📚 Modules and Topics
 
-### 1. Identity and Access Management Overview
+### 1. [Identity and Access Management Overview](Identity-and-Access-Management-Overview)
 - Introduction to OCI IAM 
 - Overview of Identity Domains
 - OCI IAM Identity Domain Types
