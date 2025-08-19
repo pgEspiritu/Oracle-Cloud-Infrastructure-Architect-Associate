@@ -22,7 +22,7 @@ This course is structured into key modules:
 - Overview of Identity Domains
 - OCI IAM Identity Domain Types
 
-### 2. Identity and Access Management – Basics
+### 2. [Identity and Access Management – Basics](Identity-Access-Management-Basics)
 - Default Domain, Creating Domains, Managing Users/Groups  
 - Policies, Compartments, and Quotas  
 - Demos for each IAM action  
