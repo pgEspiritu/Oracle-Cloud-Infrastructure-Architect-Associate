@@ -2,7 +2,7 @@
 
 ## 🔹 FastConnect Location Architecture
 
-![FastConnect](images/FastConnect.png)
+![FastConnect](../../images/FastConnect.png)
 
 - On the right, you see the **OCI region**.  
 - There are **two FastConnect locations** (Location 1 and Location 2).  
