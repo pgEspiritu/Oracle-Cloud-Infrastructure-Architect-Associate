@@ -2,6 +2,8 @@
 
 ## 🔹 FastConnect Location Architecture
 
+![FastConnect](images/FastConnect.png)
+
 - On the right, you see the **OCI region**.  
 - There are **two FastConnect locations** (Location 1 and Location 2).  
 - Each FastConnect location has **two edge devices** (routers).  
