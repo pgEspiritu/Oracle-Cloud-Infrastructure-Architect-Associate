@@ -49,6 +49,7 @@ Types:
 ---
 
 ## Key Concept Diagram
+
 ```mermaid
 graph TD
     A[Resolver]
