@@ -50,13 +50,10 @@ Types:
 
 ## Key Concept Diagram
 
-```mermaid
-mindmap
-  root((Resolver))
-    View(s)
-    Zone(s)
-    Record(s)
-```
+Resolver
+└── View(s)
+└── Zone(s)
+└── Record(s)
 
 ---
 
