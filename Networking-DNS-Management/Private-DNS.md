@@ -51,11 +51,11 @@ Types:
 ## Key Concept Diagram
 
 ```mermaid
-graph TD
-    A[Resolver]
-    A --> B[View(s)]
-    A --> C[Zone(s)]
-    A --> D[Record(s)]
+mindmap
+  root((Resolver))
+    View(s)
+    Zone(s)
+    Record(s)
 ```
 
 ---
