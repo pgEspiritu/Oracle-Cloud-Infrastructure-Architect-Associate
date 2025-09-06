@@ -6,7 +6,7 @@
 - [Demo: Policy Attachment and Inheritance](Demo-Policy-Inheritances-and-Attachment.md) – 6m  
 - [Conditional Policies](Conditional-Policies.md) – 7m  
 - [Demo: Conditional Policies](Demo-Conditional-Policies.md) – 5m  
-- [Advanced Polices](Advanced-Polices.md) – 6m  
+- [Advanced Policies](Advanced-Policies.md) – 6m  
 - [Tag Based Access Control](Tag-Based-Access-Control.md) – 10m  
 - [Demo: Tag Based Access Control](Demo-Tag-Based-Access-Control.md) – 6m  
 - [Network Sources](Network-Sources.md) – 3m  
