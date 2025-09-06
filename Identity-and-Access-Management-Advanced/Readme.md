@@ -13,6 +13,6 @@
 - [Demo: Network Sources](Demo-Network-Sources.md) – 6m  
 - [Dynamic Groups](Dynamic-Groups.md) – 8m  
 - [Demo: Dynamic Group](Demo-Dynamic-Group.md) – 8m  
-- [IAM Policy Optimization - Part-01](IAM-Policy-Optimization-Part-01.md) – 11m  
-- [IAM Policy Optimization - Part-02](IAM-Policy-Optimization-Part-02.md) – 6m  
+- [IAM Policy Optimization - Part-01](IAM-Policy-Optimization-Part1.md) – 11m  
+- [IAM Policy Optimization - Part-02](IAM-Policy-Optimization-Part2.md) – 6m  
 - [Use-Case: Object Level IAM](Use-Case-Object-Level-IAM.md) – 7m  
