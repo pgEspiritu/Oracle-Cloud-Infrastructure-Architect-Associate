@@ -27,37 +27,31 @@ This course is structured into key modules:
 - Policies, Compartments, and Quotas  
 - Demos for each IAM action  
 
-### 3. Identity and Access Management – Advanced
+### 3. [Identity and Access Management – Advanced](Identity-and-Access-Management-Advanced)
 - Policy Inheritance, Conditional Policies, Dynamic Groups  
 - Tag-Based Access, Network Sources  
 - IAM Policy Optimization, Object-Level IAM  
 
-### 4. Expert Tip 1
-- Tips & Tricks to Maximize the Course – 3m
-
-### 5. Networking – Virtual Cloud Network
+### 4. [Networking – Virtual Cloud Network](Networking-Virtual-Cloud-Network)
 - CIDR, VCN Components, Subnets  
 - Route Tables, Internet/NAT/Service Gateways  
 - Public/Private Subnets, VCN Security  
 - Security Lists, NSGs, and Skill Check
 
-### 6. Networking – IP Management
+### 5. [Networking – IP Management](Networking-IP-Management)
 - Reserved IPs, BYOIP, Public IP Pools  
 - Demo and Skill Check
 
-### 7. Networking – Connectivity
+### 6. [Networking – Connectivity](Networking-Connectivity)
 - VCN Peering (Local & Remote), DRG, VPN, FastConnect  
 - Redundancy and Transit Routing  
 - Skill Check: Connectivity
 
-### 8. Expert Tip 2
-- Importance of Hands-on Experience – 2m
-
-### 9. Networking – Load Balancer
+### 7. [Networking – Load Balancer](Networking-Load-Balancer)
 - Load Balancer Concepts and Policies  
 - Public/Private Load Balancers, NLB, WAA  
 
-### 10. Networking – DNS Management
+### 9. [Networking – DNS Management](Networking-DNS-Management)
 - DNS Concepts, Zones, Traffic Management  
 - Failover, Geolocation Routing  
 
