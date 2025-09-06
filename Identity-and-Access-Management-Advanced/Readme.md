@@ -15,4 +15,4 @@
 - [Demo: Dynamic Group](Demo-Dynamic-Group.md) – 8m  
 - [IAM Policy Optimization - Part-01](Optimizing-IAM-Policies-Part1.md) – 11m  
 - [IAM Policy Optimization - Part-02](Optimizing-IAM-Policies-Part2.md) – 6m  
-- [Use-Case: Object Level IAM](Use-Case-Object-Level-IAM.md) – 7m  
+- [Use-Case: Object Level IAM](Use-Case-Object_Level_IAM.md) – 7m  
