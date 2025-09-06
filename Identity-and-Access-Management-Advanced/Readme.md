@@ -11,8 +11,8 @@
 - [Demo: Tag Based Access Control](Demo-Tag-Based-Access-Control.md) – 6m  
 - [Network Sources](Network-Sources.md) – 3m  
 - [Demo: Network Sources](Demo-Network-Sources.md) – 6m  
-- [Dynamic Groups](Dynamic-Groups.md) – 8m  
+- [Dynamic Groups](DynamicGroups.md) – 8m  
 - [Demo: Dynamic Group](Demo-Dynamic-Group.md) – 8m  
-- [IAM Policy Optimization - Part-01](IAM-Policy-Optimization-Part1.md) – 11m  
-- [IAM Policy Optimization - Part-02](IAM-Policy-Optimization-Part2.md) – 6m  
+- [IAM Policy Optimization - Part-01](Optimizing-IAM-Policies-Part1.md) – 11m  
+- [IAM Policy Optimization - Part-02](Optimizing-IAM-Policies-Part2.md) – 6m  
 - [Use-Case: Object Level IAM](Use-Case-Object-Level-IAM.md) – 7m  
