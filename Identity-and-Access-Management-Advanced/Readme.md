@@ -2,8 +2,8 @@
 
 ## Subtopics
 
-- [Policy Inheritances and Attachment for Compartments](Policy-Inheritances-and-Attachment-for-Compartments.md) – 7m  
-- [Demo: Policy Attachment and Inheritance](Demo-Policy-Attachment-and-Inheritance.md) – 6m  
+- [Policy Inheritances and Attachment for Compartments](Policy-Inheritances-and-Attachments-for-Compartments.md.md) – 7m  
+- [Demo: Policy Attachment and Inheritance](Demo-Policy-Inheritances-and-Attachment.md) – 6m  
 - [Conditional Policies](Conditional-Policies.md) – 7m  
 - [Demo: Conditional Policies](Demo-Conditional-Policies.md) – 5m  
 - [Advanced Polices](Advanced-Polices.md) – 6m  
