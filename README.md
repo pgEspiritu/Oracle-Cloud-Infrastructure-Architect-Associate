@@ -55,52 +55,43 @@ This course is structured into key modules:
 - DNS Concepts, Zones, Traffic Management  
 - Failover, Geolocation Routing  
 
-### 11. Networking – Network Command Center
+### 10. Networking – Network Command Center
 - Latency Tools, Path Analyzer, Visualizer  
 - Virtual TAPs, Capture Filters  
 
-### 12. Expert Tip 3
-- Roles of a Cloud Architect – 2m
-
-### 13. Compute – Basics
+### 11. Compute – Basics
 - Compute Overview, Shapes, BYOI  
 - Linux/Windows Instance Setup  
 - SSH Keys, Preemptible Instances, Reservations  
 - Dedicated Hosts
 
-### 14. Compute – Advanced
+### 12. Compute – Advanced
 - Burstable Instances, Vertical Scaling, Autoscaling  
 - OS Management Hub, Shielded and Confidential Computing  
 - Console Access, Maintenance  
 
-### 15. Object Storage – Basics
+### 13. Object Storage – Basics
 - Storage Overview, Buckets, Multipart Uploads  
 - Lifecycle, Auto-Tiering, Tier Updates  
 
-### 16. Expert Tip 4
-- Architect Responsibilities – 2m
-
-### 17. Object Storage – Advanced
+### 14. Object Storage – Advanced
 - Replication, Versioning, Retention Rules  
 - Object Copy, Logging, Security, Automation  
 
-### 18. Block Storage – Basics
+### 15. Block Storage – Basics
 - Volumes, Attachments (iSCSI/Paravirtual)  
 - Performance, Scaling  
 
-### 19. Block Storage – Advanced
+### 16. Block Storage – Advanced
 - Backups, Cloning, Cross-Region and AD Replication  
 - Volume Groups, Encryption  
 
-### 20. File Storage – Basics
+### 17. File Storage – Basics
 - File System Setup, NFS Options, Paths  
 
-### 21. File Storage – Advanced
+### 18. File Storage – Advanced
 - Snapshots, Cloning, Encryption  
 - Replication, Metering, Security  
-
-### 22. Expert Tip 5
-- How to Land a Cloud Architect Role – 2m
 
 ---
 
