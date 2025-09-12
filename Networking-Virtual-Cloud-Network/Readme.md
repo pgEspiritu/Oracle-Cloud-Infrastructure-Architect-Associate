@@ -4,9 +4,6 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 
 ## 📚 Subtopics  
 
-- [**Module Overview**](Module-Overview.md) – *~1 minute*  
-  > Brief introduction to the Virtual Cloud Network module.  
-
 - [**CIDR Blocks/Prefixes – Part 1**](CIDR-Blocks-Prefixes-Part-1.md) – *~10 minutes*  
   > Learn about CIDR blocks and prefixes, the foundation of network addressing.  
 
