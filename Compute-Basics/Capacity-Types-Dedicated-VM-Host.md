@@ -1,9 +1,5 @@
 # 🖥️ Dedicated Virtual Machine Host (DVH) – Capacity Type
 
-This lesson explains the concept of **Dedicated Virtual Machine Hosts (DVH)** in Oracle Cloud Infrastructure.
-
----
-
 ## 📌 What is a Dedicated Virtual Machine Host?
 - A **dedicated host** lets you run VM instances on a **single-tenant server**.  
 - **Not shared** with other customers.  
