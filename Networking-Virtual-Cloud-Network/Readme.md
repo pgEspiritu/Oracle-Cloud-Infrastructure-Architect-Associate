@@ -73,10 +73,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 - [**VCN Security**](VCN-Security.md) – *~8 minutes*  
   > Learn about VCN security concepts and best practices.  
 
-- [**Network Security Groups – Part 1**](Network-Security-Groups-Part1.md) – *~9 minutes*  
+- [**Network Security Groups – Part 1**](Network-Security-Group-Part1.md) – *~9 minutes*  
   > Introduction to network security groups (NSGs).  
 
-- [**Network Security Groups – Part 2**](Network-Security-Groups-Part2.md) – *~6 minutes*  
+- [**Network Security Groups – Part 2**](Network-Security-Group-Part2.md) – *~6 minutes*  
   > Advanced NSG configurations and scenarios.  
 
 - [**Demo: Network Security Groups**](Demo-Network-Security-Groups.md) – *~9 minutes*  
