@@ -4,10 +4,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 
 ## 📚 Subtopics  
 
-- [**CIDR Blocks/Prefixes – Part 1**](CIDR-Blocks-Prefixes-Part-1.md) – *~10 minutes*  
+- [**CIDR Blocks/Prefixes – Part 1**](CIDR-Blocks-Prefixes-Part1.md) – *~10 minutes*  
   > Learn about CIDR blocks and prefixes, the foundation of network addressing.  
 
-- [**CIDR Blocks/Prefixes – Part 2**](CIDR-Blocks-Prefixes-Part-2.md) – *~5 minutes*  
+- [**CIDR Blocks/Prefixes – Part 2**](CIDR-Blocks-Prefixes-Part2.md) – *~5 minutes*  
   > Continuation of CIDR concepts with more detailed examples.  
 
 - [**Virtual Cloud Network**](Virtual-Cloud-Network.md) – *~10 minutes*  
@@ -16,10 +16,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 - [**VCN Components – Quick Overview**](VCN-Components-Quick-Overview.md) – *~11 minutes*  
   > Overview of the major VCN components and their interactions.  
 
-- [**Subnets – Part 1**](Subnets-Part-1.md) – *~10 minutes*  
+- [**Subnets – Part 1**](Subnets-Part1.md) – *~10 minutes*  
   > Explore subnets and their function within a VCN.  
 
-- [**Subnets – Part 2**](Subnets-Part-2.md) – *~4 minutes*  
+- [**Subnets – Part 2**](Subnets-Part2.md) – *~4 minutes*  
   > Additional subnet considerations and use cases.  
 
 - [**Demo: Create a VCN (Manually)**](Demo-Create-a-VCN-Manually.md) – *~4 minutes*  
@@ -28,10 +28,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 - [**Demo: Create a VCN (Using Wizard)**](Demo-Create-a-VCN-Using-Wizard.md) – *~5 minutes*  
   > Demo showing how to quickly create a VCN using the OCI wizard.  
 
-- [**Route Tables – Part 1**](Route-Tables-Part-1.md) – *~8 minutes*  
+- [**Route Tables – Part 1**](Route-Tables-Part1.md) – *~8 minutes*  
   > Introduction to route tables and their purpose in directing traffic.  
 
-- [**Route Tables – Part 2**](Route-Tables-Part-2.md) – *~12 minutes*  
+- [**Route Tables – Part 2**](Route-Tables-Part2.md) – *~12 minutes*  
   > Deep dive into route table rules and configurations.  
 
 - [**Demo: Route Tables**](Demo-Route-Tables.md) – *~8 minutes*  
@@ -52,10 +52,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 - [**Service Gateway**](Service-Gateway.md) – *~9 minutes*  
   > Learn how service gateways allow private network traffic to access OCI services.  
 
-- [**Demo: Service Gateway – Part 1**](Demo-Service-Gateway-Part-1.md) – *~11 minutes*  
+- [**Demo: Service Gateway – Part 1**](Demo-Service-Gateway-Part1.md) – *~11 minutes*  
   > Demo on creating and attaching a service gateway.  
 
-- [**Demo: Service Gateway – Part 2**](Demo-Service-Gateway-Part-2.md) – *~7 minutes*  
+- [**Demo: Service Gateway – Part 2**](Demo-Service-Gateway-Part2.md) – *~7 minutes*  
   > Continuation of the service gateway configuration demo.  
 
 - [**Public Subnet**](Public-Subnet.md) – *~4 minutes*  
@@ -73,10 +73,10 @@ This section introduces the **Virtual Cloud Network (VCN)** in Oracle Cloud Infr
 - [**VCN Security**](VCN-Security.md) – *~8 minutes*  
   > Learn about VCN security concepts and best practices.  
 
-- [**Network Security Groups – Part 1**](Network-Security-Groups-Part-1.md) – *~9 minutes*  
+- [**Network Security Groups – Part 1**](Network-Security-Groups-Part1.md) – *~9 minutes*  
   > Introduction to network security groups (NSGs).  
 
-- [**Network Security Groups – Part 2**](Network-Security-Groups-Part-2.md) – *~6 minutes*  
+- [**Network Security Groups – Part 2**](Network-Security-Groups-Part2.md) – *~6 minutes*  
   > Advanced NSG configurations and scenarios.  
 
 - [**Demo: Network Security Groups**](Demo-Network-Security-Groups.md) – *~9 minutes*  
