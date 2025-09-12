@@ -13,7 +13,7 @@ This section covers **IP address management in Oracle Cloud Infrastructure (OCI)
 - [**Reserved Public IP**](Reserved-Public-IP.md) – *~5 minutes*  
   > Learn how reserved public IPs work and how they can be assigned to OCI resources.  
 
-- [**BYOIP (Bring Your Own IP)**](BYOIP.md) – *~11 minutes*  
+- [**BYOIP (Bring Your Own IP)**](Bring-Your-Own-IP-Addresses.md) – *~11 minutes*  
   > Understand how to bring and manage your own IP addresses within OCI.  
 
 - [**Public IP Pools**](Public-IP-Pools.md) – *~5 minutes*  
