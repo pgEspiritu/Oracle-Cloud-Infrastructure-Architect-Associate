@@ -31,7 +31,7 @@ This section explores **advanced IAM concepts in Oracle Cloud Infrastructure (OC
 - [**Demo: Network Sources**](Demo-Network-Sources.md) – *~6 minutes*  
   > Demo configuring network sources for access policies.  
 
-- [**Dynamic Groups**](DynamicGroups.md) – *~8 minutes*  
+- [**Dynamic Groups**](DynamicGroup.md) – *~8 minutes*  
   > Learn how to group resources dynamically for access management.  
 
 - [**Demo: Dynamic Group**](Demo-Dynamic-Group.md) – *~8 minutes*  
