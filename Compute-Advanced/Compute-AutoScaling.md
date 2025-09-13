@@ -84,8 +84,3 @@ Instance configurations can then be used to launch instances in an **instance po
 - **Instance Pools** allow managing multiple instances as a group.  
 - **Autoscaling Policies** can be based on **metrics** or **schedules**.  
 - Ensures performance efficiency and cost savings.  
-
----
-
-© 2025 Oracle University  
-Privacy / Do Not Sell My Info | Contact Us | Terms of Use | Cookie Preferences | Ad Choices
