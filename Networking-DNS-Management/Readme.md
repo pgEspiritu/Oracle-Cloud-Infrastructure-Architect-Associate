@@ -16,13 +16,13 @@ This section explores **Domain Name System (DNS) management in Oracle Cloud Infr
 - [**Public DNS Zones**](Public-DNS-Zones.md) – *~9 minutes*  
   > Learn about creating and managing publicly accessible DNS zones.  
 
-- [**Demo: Public DNS Zones**](Demo-Public-DNS-Zones.md) – *~7 minutes*  
+- [**Demo: Public DNS Zones**](Demo-Public-DNS.md) – *~7 minutes*  
   > Walkthrough on configuring public DNS zones.  
 
-- [**Private DNS Zones**](Private-DNS-Zones.md) – *~14 minutes*  
+- [**Private DNS Zones**](Private-DNS.md) – *~14 minutes*  
   > Overview of private DNS zones and their use cases in OCI.  
 
-- [**Demo: Private DNS Zones**](Demo-Private-DNS-Zones.md) – *~14 minutes*  
+- [**Demo: Private DNS Zones**](Demo-Private-DNS.md) – *~14 minutes*  
   > Step-by-step demo on configuring private DNS zones.  
 
 - [**Private Views**](Private-Views.md) – *~5 minutes*  
