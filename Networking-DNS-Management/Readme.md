@@ -28,7 +28,7 @@ This section explores **Domain Name System (DNS) management in Oracle Cloud Infr
 - [**Private Views**](Private-Views.md) – *~5 minutes*  
   > Learn about private views and how they manage different DNS perspectives.  
 
-- [**HTTP Redirects**](HTTP-redirects.md) – *~5 minutes*  
+- [**HTTP Redirects**](HTTP-Redirects.md) – *~5 minutes*  
   > Configure DNS for HTTP redirects in OCI.  
 
 - [**Traffic Management**](Traffic-Management.md) – *~8 minutes*  
