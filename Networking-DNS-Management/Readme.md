@@ -37,14 +37,11 @@ This section explores **Domain Name System (DNS) management in Oracle Cloud Infr
 - [**Traffic Management – Policy Types**](Traffic-Management-Policy-Types.md) – *~8 minutes*  
   > Deep dive into the different policy types supported in OCI DNS traffic management.  
 
-- [**Demo: Failover Policy Type**](Demo-Failover-Policy-Type.md) – *~8 minutes*  
+- [**Demo: Failover Policy Type**](Demo-Fail-Over-Policy-Type.md) – *~8 minutes*  
   > Demo showcasing how failover policies ensure service availability.  
 
 - [**Demo: Load Balancer Policy Type**](Demo-Load-Balancer-Policy-Type.md) – *~5 minutes*  
   > Demo on applying load balancer policies for DNS traffic.  
-
-- [**Demo: Geolocation Steering Policy Type**](Demo-Geolocation-Steering-Policy-Type.md) – *~8 minutes*  
-  > Learn how to configure DNS traffic steering based on client geolocation.  
 
 ---
 
