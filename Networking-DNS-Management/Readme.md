@@ -4,9 +4,6 @@ This section explores **Domain Name System (DNS) management in Oracle Cloud Infr
 
 ## 📚 Subtopics  
 
-- [**Module Overview**](Module-Overview.md) – *~1 minute*  
-  > Introduction to the DNS Management module.  
-
 - [**What is DNS?**](What-is-DNS.md) – *~6 minutes*  
   > Learn the fundamentals of the Domain Name System and its importance.  
 
