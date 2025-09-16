@@ -57,7 +57,7 @@ Result: A new bucket with private visibility and standard tier.
 
 ## 💻 Step 3: Create Bucket via OCI CLI
 🔧 Install and Configure CLI
-1. Install OCI CLI
+1. [Install OCI CLI](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm)
   - Example: Windows install (follow 5–6 setup steps).
 2. Run setup:
   ```bash
