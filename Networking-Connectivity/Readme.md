@@ -55,22 +55,22 @@ This section explains the different **connectivity options in Oracle Cloud Infra
 - [**Demo: Site-to-Site VPN – Part 3**](Demo-Site-to-Site-VPN-Part3.md) – *~4 minutes*  
   > Final steps and validation of Site-to-Site VPN setup.  
 
-- [**FastConnect Overview – Part 1**](Fast-Connect-Overview-Part1.md) – *~16 minutes*  
+- [**FastConnect Overview – Part 1**](FastConnect-Overview-Part1.md) – *~16 minutes*  
   > Introduction to FastConnect and its use cases.  
 
-- [**FastConnect Overview – Part 2**](Fast-Connect-Overview-Part2.md) – *~7 minutes*  
+- [**FastConnect Overview – Part 2**](FastConnect-Overview-Part2.md) – *~7 minutes*  
   > Explore FastConnect connectivity models.  
 
-- [**FastConnect Overview – Part 3**](Fast-Connect-Overview-Part-3.md) – *~4 minutes*  
+- [**FastConnect Overview – Part 3**](FastConnect-Overview-Part3.md) – *~4 minutes*  
   > Key FastConnect deployment considerations.  
 
-- [**FastConnect With an Oracle Partner**](Fast-Connect-With-an-Oracle-Partner.md) – *~4 minutes*  
+- [**FastConnect With an Oracle Partner**](FastConnect-With-an-Oracle-Partner.md) – *~4 minutes*  
   > Learn how to establish FastConnect with Oracle partners.  
 
-- [**FastConnect With a Third-Party Provider**](Fast-Connect-With-a-Third-Party-Provider.md) – *~4 minutes*  
+- [**FastConnect With a Third-Party Provider**](FastConnect-With-a-Third-Party-Provider.md) – *~4 minutes*  
   > Understand how FastConnect works with third-party providers.  
 
-- [**FastConnect Colocation with Oracle**](Fast-Connect-Colocation-with-Oracle.md) – *~4 minutes*  
+- [**FastConnect Colocation with Oracle**](FastConnect-Colocation-with-Oracle.md) – *~4 minutes*  
   > Explore FastConnect colocation options.  
 
 - [**Demo: FastConnect**](Demo-FastConnect.md) – *~4 minutes*  
