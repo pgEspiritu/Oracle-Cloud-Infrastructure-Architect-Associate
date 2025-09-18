@@ -55,17 +55,17 @@ This course is structured into key modules:
 - DNS Concepts, Zones, Traffic Management  
 - Failover, Geolocation Routing  
 
-### 10. Networking – Network Command Center
+### 10. [Networking – Network Command Center](Network-Network-Command-Center)
 - Latency Tools, Path Analyzer, Visualizer  
 - Virtual TAPs, Capture Filters  
 
-### 11. Compute – Basics
+### 11. [Compute – Basics](Compute-Basics)
 - Compute Overview, Shapes, BYOI  
 - Linux/Windows Instance Setup  
 - SSH Keys, Preemptible Instances, Reservations  
 - Dedicated Hosts
 
-### 12. Compute – Advanced
+### 12.[Compute – Advanced](Compute-Advanced)
 - Burstable Instances, Vertical Scaling, Autoscaling  
 - OS Management Hub, Shielded and Confidential Computing  
 - Console Access, Maintenance  
