@@ -65,20 +65,20 @@ This course is structured into key modules:
 - SSH Keys, Preemptible Instances, Reservations  
 - Dedicated Hosts
 
-### 12.[Compute – Advanced](Compute-Advanced)
+### 12. [Compute – Advanced](Compute-Advanced)
 - Burstable Instances, Vertical Scaling, Autoscaling  
 - OS Management Hub, Shielded and Confidential Computing  
 - Console Access, Maintenance  
 
-### 13. Object Storage – Basics
+### 13. [Object Storage – Basics](Object-Storage–Basics)
 - Storage Overview, Buckets, Multipart Uploads  
 - Lifecycle, Auto-Tiering, Tier Updates  
 
-### 14. Object Storage – Advanced
+### 14. [Object Storage – Advanced](Object-Storage-Advanced)
 - Replication, Versioning, Retention Rules  
 - Object Copy, Logging, Security, Automation  
 
-### 15. Block Storage – Basics
+### 15. [Block Storage – Basics](Block-Storage–Basics)
 - Volumes, Attachments (iSCSI/Paravirtual)  
 - Performance, Scaling  
 
