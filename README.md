@@ -55,7 +55,7 @@ This course is structured into key modules:
 - DNS Concepts, Zones, Traffic Management  
 - Failover, Geolocation Routing  
 
-### 10. [Networking – Network Command Center](Network-Network-Command-Center)
+### 10. [Networking – Network Command Center](Networking-Network-Command-Center)
 - Latency Tools, Path Analyzer, Visualizer  
 - Virtual TAPs, Capture Filters  
 
