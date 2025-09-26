@@ -4,9 +4,6 @@ This module introduces the **Network Command Center** in Oracle Cloud Infrastruc
 
 ## 📚 Subtopics  
 
-- [**Module Overview**](Module-Overview.md) – *~1 minute*  
-  > Introduction to the Network Command Center module.  
-
 - [**Network Command Center Overview**](Network-Command-Center-Overview.md) – *~3 minutes*  
   > High-level view of Network Command Center capabilities.  
 
@@ -39,6 +36,3 @@ This module introduces the **Network Command Center** in Oracle Cloud Infrastruc
 
 - [**Demo: Virtual Test Access Points**](Demo-Virtual-Test-Access-Points.md) – *~4 minutes*  
   > Demo on creating and using VTAPs.  
-
-- [**Skill Check: Networking – Network Command Center**](Skill-Check-Networking-Network-Command-Center.md)  
-  > Test your knowledge. Score **80% or higher** to pass. *(Highest score: 80%)*  
