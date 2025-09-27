@@ -1,10 +1,5 @@
 # Lesson: File System Snapshots
 
-Hello, and welcome.  
-In this lesson, we are going to discuss **file system snapshots**.  
-
----
-
 ## What Are Snapshots?
 - Snapshots provide **data protection** for your file systems.  
 - They are a **consistent, point-in-time view** of your file system.  
