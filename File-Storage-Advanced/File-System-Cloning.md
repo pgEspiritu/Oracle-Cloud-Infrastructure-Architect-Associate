@@ -40,5 +40,3 @@ Instead, the clone **references the parent file system** for any shared data.
 
 ### 4. Clone Tree
 - A group of clones that descend from the same **root file system**.  
-Privacy / Do Not Sell My Info  
-Contact Us | Terms of Use | Cookie Preferences | Ad Choices
