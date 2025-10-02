@@ -82,14 +82,14 @@ This course is structured into key modules:
 - Volumes, Attachments (iSCSI/Paravirtual)  
 - Performance, Scaling  
 
-### 16. Block Storage – Advanced
+### 16. [Block Storage – Advanced](Block-Storage-Advanced)
 - Backups, Cloning, Cross-Region and AD Replication  
 - Volume Groups, Encryption  
 
-### 17. File Storage – Basics
+### 17. [File Storage – Basics](File-Storage-Basics)
 - File System Setup, NFS Options, Paths  
 
-### 18. File Storage – Advanced
+### 18. [File Storage – Advanced](File-Storage-Advanced)
 - Snapshots, Cloning, Encryption  
 - Replication, Metering, Security  
 
