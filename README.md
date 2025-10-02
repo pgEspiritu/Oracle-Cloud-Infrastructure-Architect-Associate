@@ -93,6 +93,8 @@ This course is structured into key modules:
 - Snapshots, Cloning, Encryption  
 - Replication, Metering, Security  
 
+### 19. [Practice Exam](Practice-Exam)
+
 ---
 
 ## 🎯 Target Audience
